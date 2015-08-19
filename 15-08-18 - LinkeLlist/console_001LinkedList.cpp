@@ -14,11 +14,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	cLinkedList ll;
 	//파일 입출력.
 	FILE *file;
+
 	char strTemp[255];
-	char *pStr, order, *value;
+	char *pStr, *value;
 
 
-	if (fopen_s(&file, "Data.txt", "r") != 0)
+	if (fopen_s(&file, "data.txt", "r") != 0)
 	{
 		printf("파일 호출 실패\n");
 		exit(0);
@@ -30,17 +31,16 @@ int _tmain(int argc, _TCHAR* argv[])
 
 		if (pStr == NULL) continue;
 
-		memcpy_s(&order, sizeof(char), pStr, sizeof(char));
-		value = strstr(pStr, ":") + 1;
+		value = strstr(strTemp, ":") + 2;
 
-		switch (order)
+		switch (strTemp[0])
 		{
 		case 'i': case 'I':
-			if (value[0] == '\n') continue; // or //if (strlen(value) < 2) continue;
+			if (value[0] == '\n' || value[0] == ' ') continue; // or //if (strlen(value) < 2) continue;
 			Insert(ll, atoi(value));
 			break;
 		case 'd': case 'D':
-			if (value[0] == '\n') continue; // or //if (strlen(value) < 2) continue;
+			if (value[0] == '\n' || value[0] == ' ') continue; // or //if (strlen(value) < 2) continue;
 			Delete(ll, atoi(value));
 			break;
 		case 'r': case 'R':
