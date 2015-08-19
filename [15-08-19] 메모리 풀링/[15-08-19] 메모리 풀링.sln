@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[15-08-19] 메모리 풀링", "[15-08-19] 메모리 풀링.vcxproj", "{B11012EF-079E-4F6B-8B16-DEC4A2AC5458}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://wlsgks5.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = [15-08-19]\u0020메모리\u0020풀링.vcxproj
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B11012EF-079E-4F6B-8B16-DEC4A2AC5458}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B11012EF-079E-4F6B-8B16-DEC4A2AC5458}.Debug|Win32.Build.0 = Debug|Win32
+		{B11012EF-079E-4F6B-8B16-DEC4A2AC5458}.Release|Win32.ActiveCfg = Release|Win32
+		{B11012EF-079E-4F6B-8B16-DEC4A2AC5458}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
